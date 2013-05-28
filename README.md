@@ -22,6 +22,10 @@ Now just drop in a folder or file of echocardiographic text files. In the termin
 
     python parser.py sample.txt
 
-Where sample.txt is any text file or folder of files. Output will be written to an excel file. 
+Where sample.txt is any text file or folder of files. For a folder, you have to append the flag 'folder' to the request.
+
+    python parser.py sampledata folder
+    
+Output will be written to an excel file. 
 
 Contact svsaraf90@gmail.com for questions.
