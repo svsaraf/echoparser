@@ -8,41 +8,63 @@
 
 #Gets the text file / folder that needs to be processed.
 #FUNCTION DEFINITIONS:
-def processfile(filename):
+from tempfile import TemporaryFile
+from xlwt import Workbook
+from time import localtime, strftime
+import os
+import sys
+import pdb
+#pdb.set_trace()
+
+def processfile(filename, sheet):
+	print "filename is !" + filename
+	originrow = 1
+	origincol = 1
 	dictionary = {}
 	f = open(filename, 'r')
 	count = 0
 	line = f.readline()
+	print "example line: " + line
 	while (line != ""):
-	    print line
 	    newdict = line.split(': ')
-	    print newdict
-	    count+=1
+	    for x in range(0, len(newdict)):
+	    	sheet.write(originrow, origincol + x, newdict[x])
+	    originrow+=1
 	    line = f.readline()
 
-	print "count =" + str(count)
 
 
 
 
-from time import localtime, strftime
-import os
 timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
 folder = 0;
-import sys
 total = len(sys.argv)
 if total == 1:
 	sys.exit("I need an input file and a process type. Try python parser.py sample.txt")
 filename = sys.argv[1]
-print "Processing " + sys.argv[1] + " at " + timing
+log = "Processed " + sys.argv[1] + " at " + timing
+print log
+book = Workbook()
 if sys.argv[total-1] == "folder":
+	print "got here"
 	folder = 1;
 	foldername = filename;
 	for f in os.listdir(foldername):
-		processfile(foldername + "/" + f)
+		print "inside the loop"
+		sheet = book.add_sheet(f)
+		processfile(foldername + "/" + f, sheet)
+		sheet.write(0,0,log)
+	print foldername + " foldername "
+	pdb.set_trace()
+	x = "output_" + foldername + ".xls"
+	print "x = " + x
+	book.save("output_" + foldername + ".xls")
 else:
 	folder = 0;
-	processfile(filename)
+	sheet = book.add_sheet(filename)
+	processfile(filename, sheet)
+	sheet.write(0,0,log)
+	book.save("output_" + filename[:-4] + ".xls")
 
 
 
