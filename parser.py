@@ -4,27 +4,50 @@
 #It inputs a text file (eventually a body of text files)
 #and outputs an excel file with the data.
 
+#For help, go to this readme: https://github.com/svsaraf/echoparser
 
-#Gets the text file that needs to be processed.
+#Gets the text file / folder that needs to be processed.
+#FUNCTION DEFINITIONS:
+def processfile(filename):
+	dictionary = {}
+	f = open(filename, 'r')
+	count = 0
+	line = f.readline()
+	while (line != ""):
+	    print line
+	    newdict = line.split(': ')
+	    print newdict
+	    count+=1
+	    line = f.readline()
+
+	print "count =" + str(count)
+
+
+
+
+from time import localtime, strftime
+import os
+timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
+folder = 0;
 import sys
 total = len(sys.argv)
 if total == 1:
-	sys.exit("I need an input file! Try python parser.py sample.txt")
-filename = sys.argv[total-1]
-print "Processing " + sys.argv[total-1]
+	sys.exit("I need an input file and a process type. Try python parser.py sample.txt")
+filename = sys.argv[1]
+print "Processing " + sys.argv[1] + " at " + timing
+if sys.argv[total-1] == "folder":
+	folder = 1;
+	foldername = filename;
+	for f in os.listdir(foldername):
+		processfile(foldername + "/" + f)
+else:
+	folder = 0;
+	processfile(filename)
 
-#Opens the input file, creates the dictionary.
-dictionary = {}
-f = open(filename, 'r')
-count = 0
-line = f.readline()
-while (line != ""):
-    print line
-    newdict = line.split(': ')
-    print newdict
-    count+=1
-    line = f.readline()
 
-print "count =" + str(count)
+
+
+
+
 
 
