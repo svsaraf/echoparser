@@ -3,7 +3,7 @@ This is a python parser for echocardiographic data from NMFF / NMH.
 
 *ACTUAL DATA IS NOT VERSION CONTROLLED*
 
-Right now, it opens a file or folder in python, reads it, tokenizes the data it can understand.
+Right now, it opens a file or folder in python, reads it, tokenizes the data it can understand, and outputs an excel file with the results. 
 
 Installation instructions:
 --------------------------
