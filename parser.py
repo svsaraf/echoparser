@@ -17,7 +17,7 @@ import pdb
 #pdb.set_trace()
 
 def processfile(filename, sheet):
-	print "filename is !" + filename
+	print "Analyzing " + filename
 	originrow = 1
 	origincol = 1
 	dictionary = {}
@@ -26,7 +26,6 @@ def processfile(filename, sheet):
 	line = f.readline()
 	line = line.decode("ascii", "ignore")
 	line = line.encode("utf-8")
-	print "example line: " + line
 	while (line != ""):
 	    newdict = line.split(': ')
 	    for x in range(0, len(newdict)):
@@ -44,24 +43,22 @@ total = len(sys.argv)
 if total == 1:
 	sys.exit("I need an input file and a process type. Try python parser.py sample.txt")
 filename = sys.argv[1]
-log = "Processed " + sys.argv[1] + " at " + timing
+log = "Processing " + sys.argv[1] + " at " + timing
 print log
 book = Workbook(encoding='utf-8')
 if sys.argv[total-1] == "folder":
-	print "got here"
 	folder = 1;
 	foldername = filename;
 	for f in os.listdir(foldername):
-		print "inside the loop"
 		if f[-4:] == ".txt":
 			sheet = book.add_sheet(f)
 			processfile(foldername + "/" + f, sheet)
+			timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
+			log = "Processing complete at " + timing + "."
 			sheet.write(0,0,log)
-	print foldername + " foldername "
-	#pdb.set_trace()
-	x = "output_" + foldername + ".xls"
-	print "x = " + x
 	book.save("output_" + foldername + ".xls")
+	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
+	print "Finished analyzing at " + timing + "."
 else:
 	folder = 0;
 	sheet = book.add_sheet(filename)
