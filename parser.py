@@ -34,9 +34,6 @@ def processfile(filename, sheet):
 	    line = f.readline()
 
 
-
-
-
 timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
 folder = 0;
 total = len(sys.argv)
@@ -65,6 +62,8 @@ else:
 	processfile(filename, sheet)
 	sheet.write(0,0,log)
 	book.save("output_" + filename[:-4] + ".xls")
+	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
+	print "Finished analyzing at " + timing + "."
 
 
 
