@@ -24,6 +24,8 @@ def processfile(filename, sheet):
 	f = open(filename, 'r')
 	count = 0
 	line = f.readline()
+	line = line.decode("ascii", "ignore")
+	line = line.encode("utf-8")
 	print "example line: " + line
 	while (line != ""):
 	    newdict = line.split(': ')
@@ -44,18 +46,19 @@ if total == 1:
 filename = sys.argv[1]
 log = "Processed " + sys.argv[1] + " at " + timing
 print log
-book = Workbook()
+book = Workbook(encoding='utf-8')
 if sys.argv[total-1] == "folder":
 	print "got here"
 	folder = 1;
 	foldername = filename;
 	for f in os.listdir(foldername):
 		print "inside the loop"
-		sheet = book.add_sheet(f)
-		processfile(foldername + "/" + f, sheet)
-		sheet.write(0,0,log)
+		if f[-4:] == ".txt":
+			sheet = book.add_sheet(f)
+			processfile(foldername + "/" + f, sheet)
+			sheet.write(0,0,log)
 	print foldername + " foldername "
-	pdb.set_trace()
+	#pdb.set_trace()
 	x = "output_" + foldername + ".xls"
 	print "x = " + x
 	book.save("output_" + foldername + ".xls")
