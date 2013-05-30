@@ -13,25 +13,78 @@ from xlwt import Workbook
 from time import localtime, strftime
 import os
 import sys
+from xlrd import open_workbook, cellname, XL_CELL_EMPTY
+import re
+
 import pdb
 #pdb.set_trace()
 
-def processfile(filename, sheet):
+def processfile2(filename, sheet, inputdictionary):
 	print "Analyzing " + filename
 	originrow = 1
 	origincol = 1
-	dictionary = {}
+	datadictionary = {}
 	f = open(filename, 'r')
 	count = 0
 	line = f.readline()
-	line = line.decode("ascii", "ignore")
-	line = line.encode("utf-8")
 	while (line != ""):
 	    newdict = line.split(': ')
 	    for x in range(0, len(newdict)):
 	    	sheet.write(originrow, origincol + x, newdict[x])
 	    originrow+=1
 	    line = f.readline()
+	f.close()
+	return datadictionary
+
+def processfile(filename, sheet, inputdictionary):
+	print "Analyzing " + filename
+	originrow = 1
+	origincol = 1
+	datadictionary = {}
+	f = open(filename, 'r').read()
+	for var_name in inputdictionary:
+		p = re.compile(re.escape(var_name) + ':*\s*', re.IGNORECASE)
+		m = p.search(f)
+		if m != None:
+			if inputdictionary[var_name][1] == 'n':
+				edited = f[m.end():]
+				q = re.compile(r'\d+\s*/*\s*\d*')
+				n = q.match(edited)
+				if n != None:
+					datadictionary[inputdictionary[var_name][0]] = n.group()
+				else:
+					datadictionary[inputdictionary[var_name][0]] = ''
+			elif inputdictionary[var_name][1] == 'st':
+				edited = f[m.end():]
+				q = re.compile(r'\w+.*')
+				n = q.match(edited)
+				if n != None:
+					datadictionary[inputdictionary[var_name][0]] = n.group()
+				else:
+					datadictionary[inputdictionary[var_name][0]] = ''
+			elif inputdictionary[var_name][1] == 'ss':
+				edited = f[m.end():]
+				q = re.compile(r'[a-zA-Z]+?.*\n\s*\n')
+				n = q.match(edited)
+				if n != None:
+					datadictionary[inputdictionary[var_name][0]] = n.group()
+				else:
+					datadictionary[inputdictionary[var_name][0]] = ''
+		else: 
+			datadictionary[var_name] = ''
+	return datadictionary
+
+def retrieveinputdictionary(inputdictionary):
+	heading = ''
+	book = open_workbook('inputparameters/inputparameters.xls', formatting_info=True)
+	sheet = book.sheet_by_index(0)
+	for row_index in range(sheet.nrows):
+		if (row_index > 0):
+			font = book.font_list
+			cell_xf = book.xf_list[sheet.cell_xf_index(row_index,1)]
+			if font[cell_xf.font_index].bold:
+				inputdictionary[sheet.cell(row_index,1).value] = [sheet.cell(row_index,2).value, sheet.cell(row_index,3).value]
+	return inputdictionary
 
 
 timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
@@ -40,6 +93,8 @@ total = len(sys.argv)
 if total == 1:
 	sys.exit("I need an input file and a process type. Try python parser.py sample.txt")
 filename = sys.argv[1]
+inputdictionary = {}
+inputdictionary = retrieveinputdictionary(inputdictionary)
 log = "Processing " + sys.argv[1] + " at " + timing
 print log
 book = Workbook(encoding='utf-8')
@@ -49,17 +104,18 @@ if sys.argv[total-1] == "folder":
 	for f in os.listdir(foldername):
 		if f[-4:] == ".txt":
 			sheet = book.add_sheet(f)
-			processfile(foldername + "/" + f, sheet)
+			datadictionary = processfile(foldername + "/" + f, sheet, inputdictionary)
 			timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
 			log = "Processing complete at " + timing + "."
 			sheet.write(0,0,log)
+
 	book.save("output_" + foldername + ".xls")
 	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
 	print "Finished analyzing at " + timing + "."
 else:
 	folder = 0;
 	sheet = book.add_sheet(filename)
-	processfile(filename, sheet)
+	datadictionary = processfile(filename, sheet, inputdictionary)
 	sheet.write(0,0,log)
 	book.save("output_" + filename[:-4] + ".xls")
 	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
