@@ -3,3 +3,4 @@ data
 venv
 !inputparameters.xls
 *.pyc
+.DS_STORE

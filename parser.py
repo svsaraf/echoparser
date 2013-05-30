@@ -48,7 +48,7 @@ def processfile(filename, sheet, inputdictionary, outputdictionary):
 		if m != None:
 			if inputdictionary[var_name][1] == 'n':
 				edited = f[m.end():]
-				q = re.compile(r'\d+\s*/*\d*/*\d*\s*\d*\d*/*\d*')
+				q = re.compile(r'\d+\s*/*\d*/*\d*\.*\s*\d*\d*/*\d*')
 				n = q.match(edited)
 				if n != None:
 					datadictionary[inputdictionary[var_name][0]] = n.group()
