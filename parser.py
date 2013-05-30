@@ -15,7 +15,7 @@ import os
 import sys
 from xlrd import open_workbook, cellname, XL_CELL_EMPTY
 import re
-
+import odict
 import pdb
 #pdb.set_trace()
 
@@ -36,19 +36,19 @@ def processfile2(filename, sheet, inputdictionary):
 	f.close()
 	return datadictionary
 
-def processfile(filename, sheet, inputdictionary):
+def processfile(filename, sheet, inputdictionary, outputdictionary):
 	print "Analyzing " + filename
-	originrow = 1
-	origincol = 1
-	datadictionary = {}
+	datadictionary = odict.odict()
 	f = open(filename, 'r').read()
+	for eachoutput in outputdictionary:
+		datadictionary[eachoutput] = ''
 	for var_name in inputdictionary:
 		p = re.compile(re.escape(var_name) + ':*\s*', re.IGNORECASE)
 		m = p.search(f)
 		if m != None:
 			if inputdictionary[var_name][1] == 'n':
 				edited = f[m.end():]
-				q = re.compile(r'\d+\s*/*\s*\d*')
+				q = re.compile(r'\d+\s*/*\d*/*\d*\s*\d*\d*/*\d*')
 				n = q.match(edited)
 				if n != None:
 					datadictionary[inputdictionary[var_name][0]] = n.group()
@@ -93,21 +93,42 @@ total = len(sys.argv)
 if total == 1:
 	sys.exit("I need an input file and a process type. Try python parser.py sample.txt")
 filename = sys.argv[1]
-inputdictionary = {}
+inputdictionary = odict.odict()
 inputdictionary = retrieveinputdictionary(inputdictionary)
+#print "Length of input dict is " + str(len(inputdictionary))
+#print inputdictionary
+outputdictionary = odict.odict()
+for inputkey in inputdictionary:
+	outputdictionary[inputdictionary[inputkey][0]] = inputdictionary[inputkey][1]
+#print "Length of output dict is " + str(len(outputdictionary))
+#print outputdictionary
 log = "Processing " + sys.argv[1] + " at " + timing
 print log
 book = Workbook(encoding='utf-8')
 if sys.argv[total-1] == "folder":
 	folder = 1;
 	foldername = filename;
+	sheet = book.add_sheet("OUTPUT")
+	writtenrow = 0
+	writtencol = 1
+	for param in outputdictionary:
+		sheet.write(writtenrow, writtencol, param)
+		writtencol += 1
+	writtenrow = 1
+	writtencol = 0
 	for f in os.listdir(foldername):
 		if f[-4:] == ".txt":
-			sheet = book.add_sheet(f)
-			datadictionary = processfile(foldername + "/" + f, sheet, inputdictionary)
-			timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
-			log = "Processing complete at " + timing + "."
-			sheet.write(0,0,log)
+			sheet.write(writtenrow, writtencol, f)
+			datadictionary = processfile(foldername + "/" + f, sheet, inputdictionary, outputdictionary)
+			for datapoint in datadictionary:
+				writtencol+=1
+				sheet.write(writtenrow, writtencol, datadictionary[datapoint])
+			writtenrow += 1
+			writtencol = 0
+
+	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())	
+	log = "Processing complete at " + timing + "."
+	sheet.write(0,0,log)
 
 	book.save("output_" + foldername + ".xls")
 	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())

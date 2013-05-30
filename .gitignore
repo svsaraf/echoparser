@@ -2,3 +2,4 @@ data
 *.xls
 venv
 !inputparameters.xls
+*.pyc
