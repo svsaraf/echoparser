@@ -19,23 +19,6 @@ import odict
 import pdb
 #pdb.set_trace()
 
-def processfile2(filename, sheet, inputdictionary):
-	print "Analyzing " + filename
-	originrow = 1
-	origincol = 1
-	datadictionary = {}
-	f = open(filename, 'r')
-	count = 0
-	line = f.readline()
-	while (line != ""):
-	    newdict = line.split(': ')
-	    for x in range(0, len(newdict)):
-	    	sheet.write(originrow, origincol + x, newdict[x])
-	    originrow+=1
-	    line = f.readline()
-	f.close()
-	return datadictionary
-
 def processfile(filename, sheet, inputdictionary, outputdictionary):
 	print "Analyzing " + filename
 	datadictionary = odict.odict()
@@ -95,13 +78,9 @@ if total == 1:
 filename = sys.argv[1]
 inputdictionary = odict.odict()
 inputdictionary = retrieveinputdictionary(inputdictionary)
-#print "Length of input dict is " + str(len(inputdictionary))
-#print inputdictionary
 outputdictionary = odict.odict()
 for inputkey in inputdictionary:
 	outputdictionary[inputdictionary[inputkey][0]] = inputdictionary[inputkey][1]
-#print "Length of output dict is " + str(len(outputdictionary))
-#print outputdictionary
 log = "Processing " + sys.argv[1] + " at " + timing
 print log
 book = Workbook(encoding='utf-8')
@@ -125,7 +104,6 @@ if sys.argv[total-1] == "folder":
 				sheet.write(writtenrow, writtencol, datadictionary[datapoint])
 			writtenrow += 1
 			writtencol = 0
-
 	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())	
 	log = "Processing complete at " + timing + "."
 	sheet.write(0,0,log)
@@ -134,14 +112,8 @@ if sys.argv[total-1] == "folder":
 	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
 	print "Finished analyzing at " + timing + "."
 else:
-	folder = 0;
-	sheet = book.add_sheet(filename)
-	datadictionary = processfile(filename, sheet, inputdictionary)
-	sheet.write(0,0,log)
-	book.save("output_" + filename[:-4] + ".xls")
-	timing = strftime("%Y-%m-%d %H:%M:%S", localtime())
-	print "Finished analyzing at " + timing + "."
-
+	print "Please use a data folder rather than a file."
+	print "Then append the flag 'folder' to the request."
 
 
 
