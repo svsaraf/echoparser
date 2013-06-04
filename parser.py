@@ -52,7 +52,12 @@ def processfile(filename, sheet, inputdictionary, outputdictionary):
 				if n != None:
 					datadictionary[inputdictionary[var_name][0]] = n.group()
 				else:
-					datadictionary[inputdictionary[var_name][0]] = ''
+					q = re.compile(r'[a-zA-Z]+?.*\n\s*')
+					n = q.match(edited)
+					if n!= None:
+						datadictionary[inputdictionary[var_name][0]] = n.group()
+					else:
+						datadictionary[inputdictionary[var_name][0]] = ''
 		else: 
 			datadictionary[var_name] = ''
 	return datadictionary
