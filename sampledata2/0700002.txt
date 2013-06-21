@@ -1,0 +1,265 @@
+
+
+Results 
+ CARDIOPULMONARY STRESS TEST (Order 5555555) 
+ 
+ 
+
+
+Result Information  
+ 
+  Exam Date Status Result Date 
+  9/99/9999 Final result 9/99/9999 
+  
+
+
+Lab and Collection  
+  CARDIOPULMONARY STRESS TEST (Order#55555559) on 9/99/99 - Lab and Collection Information 
+  
+
+Transcription  
+ 
+  Type ID Date 
+  NMH CARDIOPULMONARY EXERCISE STRESS TEST 1517741 9/99/9999 
+  
+ 
+  Document Text 
+       
+                             NORTHWESTERN MEMORIAL HOSPITAL
+                       CARDIOPULMONARY EXERCISE STRESS TEST
+                                   (312) 926-2514
+                                 DATE:  05/12/2010
+
+NAME:               Smither, Johnny
+REFERRING MD:       Sanjiv J Shah, MD               MRN #:         4564564-9876
+
+AGE:                68 years                        DOB:           9/9/9999
+WEIGHT (kg):        77.3
+IBW (kg):           81.5
+HEIGHT (cm):        180
+Reason for          Functional Capacity Evaluation  Medications:   Altace
+Referral:                                                          Amiodarone
+                                                                   Avodart
+                                                                   Bumex
+                                                                   Coumadin
+                                                                   Lipitor
+                                                                   Metoprolol
+                                                                   Potassium
+                                                                   Chloride
+                                                                   Prilosec
+PMH:                s/p MVR w/MAZE procedure
+                    Diastolic heart failure
+                    Atrial fibrillation
+
+PULMONARY FUNCTION
+             Measurement                  Measured             % Predicted
+FVC (L)                                     3.54                    76
+FEV1 (L)                                    2.51                    73
+FEV1/FVC                                     71
+TLC (L)                                     6.17                    91
+RV(L)                                       2.63                   102
+MVV measured (L/min)                         103                    77
+MVV calculated (L/min)                      100.6
+DLCO (mL/mmHg/min)                          14.1                    52
+
+Complete pulmonary function testing to be reported separately.
+OXYGEN UPTAKE
+             Measurement                  Measured             % Predicted
+VO2 max (L/min)                             1.641                   84
+VO2 max (ml/kg/min)                    21.2 (IBW 20.1)         88 (IBW 84)
+Anaerobic Threshold (AT) (L/min)            1.345
+AT(ml/kg/min)                               17.4
+AT (% max VO2 predicted)                     68                     47
+
+CARDIOVASCULAR RESPONSE
+             Measurement                  Measured             % Predicted
+Heart Rate @ rest                            51
+Heart Rate @ peak                            85                     55
+Heart Rate Reserve (bpm)                     67               (normal < 10)
+Heart Rate @ AT                              73
+Blood Pressure @ rest (cuff)               114/72
+Blood Pressure @ peak                      164/70
+Rate Pressure Product (*100)                 139
+O2 Pulse (ml/beat) @ peak                   19.3                   149
+Rating of Perceived Exertion (RPE) @          4
+AT (1-10)
+Rating of Perceived Exertion @  peak          8
+(1-10)
+
+VENTILATORY RESPONSE
+            Measurement                  Measured               Predicted
+Respiratory quotient (RQ) @  rest          0.78
+RQ @  peak                                 1.05
+VE (L/min) @  peak                         65.7                   64%
+Breathing Reserve (L/min)              37.3L or 36%           >20L or 20%
+Respiratory rate @ rest                      9
+Respiratory rate @  peak                    40                    < 50
+VE/VO2 @  AT                                25                    < 30
+VE/VCO2 @ AT                                30                    < 34
+Pulse oximetry (%) @  rest                  99
+Pulse oximetry(%) @  peak                   97
+VD/VT @ rest                               0.28                  < 0.38
+P(A-a) O2 @ rest                           -3.1                   < 28
+P(a-ET) CO2 @ rest                         10.4                 positive 3
+
+ARTERIAL BLOOD GAS
+                     Rest
+pH                   7.38
+PCO2                  41
+PO2                   94
+%HBO2                 95
+%HBCO                 3
+Hgb                  12.0
+Bicarbonate           24
+Base EX/DEF           -1
+Lactic Acid          0.7
+
+INTERPRETATION:
+This patient exercised for 10 minutes and 40 seconds on a cycle ergometer
+using a 10 watt ramping protocol. He achieved a workload of 104 watts (54%
+predicted).  Exercise was stopped due to leg fatigue.  No chest pain was
+reported.  No wheezing was auscultated immediately post exercise.  The
+study was submaximal.  Maximum VO2 (l/min) was 84% of predicted value
+consistent with normal absolute oxygen consumption.  Exercise capacity
+relative to body weight was also normal at 21.2 ml/kg/min (88% predicted).
+
+
+The baseline electrocardiogram showed atrial fibrillation with an
+incomplete right bundle branch block pattern and nonspecific ST-T wave
+abnormalities.  Occasional premature ventricular contractions were
+observed.  Non-diagnostic ECG portion of the exercise stress test due to
+failure to reach target heart rate.
+
+The peak O2 pulse, reflecting stroke volume, is above normal with an
+appropriate curvilinear response with exercise.  The heart rate response to
+exercise is linear but the slope is shifted downward (blunted at each
+exercise stage).  There is abundant heart rate reserve at peak exercise
+which may be due to beta-adrenergic blockade and/or antiarrhythmic therapy.
+The blood pressure response with exercise is appropriate.  The onset of
+anaerobic threshold is delayed.  Together these findings suggest a blunted
+heart rate response with an otherwise normal cardiovascular response to
+submaximal exercise.  The expected cardiovascular limitation to maximal
+exercise is not demonstrated.  The delayed onset of anaerobic threshold
+suggests good cardiovascular conditioning.  The O2 pulse may be falsely
+elevated in the presence of beta-adrenergic blockade and/or antiarrhythmic
+therapy.
+
+The breathing reserve is normal with no ventilatory limitation to further
+exercise.  However, the exercise flow volume loops demonstrate expiratory
+flow limitation; although not preventing further with exercise.  The RR at
+peak exercise is normal; the VT at peak exercise is 42% of the FVC.
+Measured dead space is normal at rest.  Ventilatory equivalents for CO2 and
+O2 at anaerobic threshold are normal.  The resting arterial blood gas is
+normal.  There was no oxygen desaturation with exercise.  Together these
+findings are suggestive of no ventilatory limitation or gas exchange
+abnormalities with submaximal exercise. These findings are consistent with
+the resting PFTs.
+
+To summarize, these results indicate that the patient's exercise tolerance
+is normal with reduced estimated work efficiency (external workload of 54%
+at 84% VO2).  This study demonstrates a blunted heart rate response with
+evidence of good cardiovascular conditioning.  The expected cardiovascular
+limitation with maximal exercise is not demonstrated; although may be
+masked in the presence of beta-adrenergic blockade and/or antiarrhythmic
+therapy.  Despite the expiratory flow limitation demonstrated on the
+exercise flow volume loops, there is no evidence of ventilatory limitation
+or ventilation/perfusion mismatching preventing further exercise.
+Recommend 1) further pulmonary evaluation and 2) a continued
+exercise-training program with a target heart rate of 66-72 bpm and a
+Rating of Perceived Exertion (RPE) of 2-3 on a scale of 1-10, exercising
+3-5 times per week for 20-30 minutes.
+
+/TS   D:  05/14/2010 T:  05/14/2010  2:32 P            DOC#:  1517741
+
+
+
+      Thomas Holly, MD
+
+Performed   Dictated by:      Theresa Strzelczyk, APN
+
+Electronically Authenticated by
+Thomas Holly, MD 05/27/2010 20:07
+cc:   Gary Martin, MD
+      Theresa Strzelczyk, APN
+     
+ 
+ 
+  
+    Display only: Transcription (1517741) on 5/12/2010 
+  
+ 
+    Document history: Transcription (1517741) on 5/12/2010 
+  
+ 
+  
+
+
+Reviewed by List  
+  MARTIN MD, GARY   on Sun May 30, 2010  8:32 AM   
+  
+
+
+
+MyChart Status:   
+  This result is automatically blocked from release to MyChart. 
+  
+
+
+
+
+Order 
+ CARDIOPULMONARY STRESS TEST [3094621] (Order 59335879) 
+ 
+ 
+
+Order Information  
+ 
+  Ordered On Ordered By Ord Status Authorizing Provider 
+  Wed May 12, 2010 12:00 AM Tran Interface Normal Gary J. Martin, MD 
+  
+    
+  
+
+Order Providers  
+ 
+  Authorizing Provider Encounter Provider 
+  Gary J. Martin, MD Gary J. Martin, MD 
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+Order CC Information  
+ 
+  Recipient Phone 
+  Gary J. Martin, MD 312-695-8630 
+  
+
+
+Detailed Information  
+  Priority and Order Details Collection Information 
+  
+
+Encounter  
+  View Encounter 
+  
+
+
+Print Label  
+  Click Here 
+  
+
+
+Document List  
+  Encounter Document List 
+  
+  There is no document attached to this encounter. 
+  

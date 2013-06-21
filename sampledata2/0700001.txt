@@ -1,0 +1,262 @@
+
+
+Results 
+ CARDIOPULMONARY STRESS TEST (Order 1234567) 
+ 
+ 
+
+
+Result Information  
+ 
+  Exam Date and Time Status Result Date and Time 
+  2/8/2008 12:00 AM Final result 2/8/2008 12:00 AM 
+  
+
+
+Lab and Collection  
+  CARDIOPULMONARY STRESS TEST (Order#1234567) on 9/9/99 - Lab and Collection Information 
+  
+
+Transcription  
+ 
+  Type ID Date and Time 
+  NMH CARDIOPULMONARY EXERCISE STRESS TEST 1234567 9/9/2999 12:00 AM 
+  
+ 
+  Document Text 
+       
+                             NORTHWESTERN MEMORIAL HOSPITAL
+                       CARDIOPULMONARY EXERCISE STRESS TEST
+                                   (312) 926-2514
+                                 DATE:  02/08/2008
+
+NAME:               Smith, John
+REFERRING MD:       William Cotts, MD               MRN #:         123456789-1111
+
+AGE:                78 years                        DOB:           03/99/1999
+WEIGHT (kg):        96.6
+IBW (kg):           81.5
+HEIGHT (cm):        180
+Reason for          Functional Capacity Evaluation  Medications:   Captopril,
+Referral:           Dyspnea                                        Imdur, Lasix,
+                                                                   K-Dur, Foltx,
+                                                                   Digoxin, 
+Zoloft,
+                                                                   Trazodone,
+                                                                   Foradil
+                                                                   Synthroid,
+                                                                   Proscar
+                                                                   Simvastatin,
+                                                                   Albuterol,
+                                                                   Nasonex,
+                                                                   
+anticoagulation
+                                                                   study drug
+PMH:                Ischemic cardiomyopathy, atrial
+                    fibrillation, ICD
+                    w/biventricular pacemaker
+
+PULMONARY FUNCTION
+             Measurement                  Measured      % Predicted     Post    
+   % change
+                                                                    
+bronchodilato
+                                                                          r
+FVC (L)                                     3.22            72          3.05    
+      -5
+FEV1 (L)                                    2.12            66          2.22    
+      5
+FEV1/FVC                                     66
+TLC (L)                                     7.57            110
+RV(L)                                       4.23            150
+MVV measured (L/min)                         55             44           62     
+      13
+MVV calculated (L/min)                      103.5
+DLCO (mL/mmHg/min)                          21.1            84
+
+Complete pulmonary function testing to be reported separately.
+OXYGEN UPTAKE
+             Measurement                 Measured       % Predicted
+VO2 max (L/min)                           1.429             70
+VO2 max (ml/kg/min)                     15.3 (IBW       61 (IBW 70)
+                                          17.5)
+Anaerobic Threshold (AT) (L/min)          1.088
+AT(ml/kg/min)                              11.6
+AT (% max VO2 predicted)                    53              48
+
+CARDIOVASCULAR RESPONSE
+             Measurement                 Measured       % Predicted
+Heart Rate @ rest                           70
+Heart Rate @ peak                          121              85
+Heart Rate Reserve (bpm)                    21             < 10
+Heart Rate @ AT                             86
+Blood pressure @ rest                     94/58
+Blood pressure @ peak                     142/60
+Rate Pressure Product (*100)               172
+O2 Pulse (ml/beat) @ peak                  11.8             82
+Rating of Perceived Exertion (RPE) @        0
+AT (1-10)
+Rating of Perceived Exertion @  peak        2
+(1-10)
+
+VENTILATORY RESPONSE
+            Measurement                 Measured         Predicted
+Respiratory quotient (RQ) @  rest         0.68
+RQ @  peak                                1.11
+VE (L/min) @  peak                        67.5              65%
+Breathing Reserve (L/min)              36L or 35%       >20L or 20%
+Respiratory rate @ rest                    19
+Respiratory rate @  peak                   25              < 50
+VE/VO2 @  AT                               32              < 30
+VE/VCO2 @ AT                               38              < 34
+Pulse oximetry (%) @  rest                 97
+Pulse oximetry(%) @  peak                  98
+
+INTERPRETATION:
+This patient exercised for 7 minutes and 56 seconds on a treadmill using a
+Modified Bruce protocol. He achieved a speed of 1.7 mph and an elevation of
+105.  Exercise was stopped due to mouthpiece discomfort.  No chest pain was
+reported.  No wheezing was auscultated immediately post exercise.  The
+study was submaximal.  Maximum VO2 (l/min) was 70% of predicted value
+consistent with mildly reduced absolute oxygen consumption.  However,
+exercise capacity relative to body weight was moderately reduced at 15.3
+ml/kg/min (61% predicted).  Compared with CPET done on 09/29/2006, exercise
+capacity has improved.  Previous peak VO2 was 13.0 ml/kg/min (1.118 L/min)
+and exercise time was 6:53 on the Modified Bruce protocol.
+
+Baseline ventricular paced rhythm with intermittent atrial fibrillation and
+intermittent native beats noted during exercise.  No definite premature
+ventricular beats were observed.  Non-diagnostic ECG portion of the
+exercise stress test due to paced rhythm.
+
+The peak O2 pulse, reflecting stroke volume, is normal with a flattened
+curvilinear response with exercise. This abnormal response indicates a
+reduced stroke volume at a maximal a-v O2 difference.  The heart rate
+response to exercise demonstrates a normal linear slope until end exercise
+when the slope accelerates.  There is abundant heart rate reserve at peak
+exercise which may be due to lack of pacemaker rate responsiveness.  The
+blood pressure response with exercise is appropriate.  The onset of
+anaerobic threshold is delayed.  Together these findings suggest an
+abnormal cardiovascular response to submaximal exercise.  The normal
+cardiovascular limitation to maximal exercise is not demonstrated.
+
+The breathing reserve is normal consistent with no ventilatory limitation
+to further exercise.  Exercise flow volume loops demonstrate expiratory
+flow limitation with exercise; although not preventing further exercise.
+The RR at peak exercise is normal; the VT at peak exercise is 39% of the
+FVC.  Ventilatory equivalents for CO2 and O2 at anaerobic threshold are
+high.  This is suggestive of ventilation/perfusion mismatching.  There was
+no oxygen desaturation with exercise.  Together these findings are
+suggestive of no ventilatory limitation with submaximal exercise. These
+findings are consistent with the resting PFTs.
+
+To summarize, these results indicate that the patient's exercise tolerance
+is moderately reduced despite mildly reduced absolute oxygen consumption.
+Estimated work efficiency is reduced.  This study demonstrates an abnormal
+cardiovascular response; specifically an inability to augment stroke volume
+in conjunction with an accelerated heart rate response with exercise.  The
+normal cardiovascular limitation with maximal exercise is not demonstrated;
+although may be masked with the lack of significant pacemaker rate
+responsiveness.  There is evidence of expiratory flow limitation with
+exercise; however this is not preventing further exercise.  There is
+evidence of gas exchange abnormalities with exercise.  Compared to recent
+cardiopulmonary testing, both exercise duration and oxygen consumption have
+improved.
+
+Date             Exercise         Peak VO2            Peak VO2
+                 duration         (ml/kg/min)         (L/min)
+05-28-2003       9:29 (Modified   16.6                1.480
+                 Bruce)
+12-14-2005       9:12 (Modified   15.2                1.332
+                 Bruce)
+09-29-2006       6:53 (Modified   13.0                1.219
+                 Bruce)
+02-08-2008       7:56 (Modified   15.3                1.429
+                 Bruce)
+
+
+      Ruperto D Mayuga, MD
+
+Performed   Dictated by:      Theresa Strzelczyk, APN
+
+Electronically Authenticated by
+Ruperto D Mayuga, MD 02/08/2008 14:18
+cc:   William Cotts, MD
+      Theresa Strzelczyk, APN
+     
+ 
+ 
+  
+    Display only: Transcription (1209104) on 2/8/2008 12:00 AM 
+  
+ 
+    Document history: Transcription (1209104) on 2/8/2008 12:00 AM 
+  
+ 
+  
+
+
+Reviewed by List  
+  COTTS MD, WILLIAM   on Sun Feb 10, 2008 10:03 PM   
+  
+
+
+
+MyChart Status:   
+  This result is automatically blocked from release to MyChart. 
+  
+
+
+
+
+Order 
+ CARDIOPULMONARY STRESS TEST [3094621] (Order 41557461) 
+ 
+ 
+
+Order Information  
+ 
+  Ordered On Ordered By Ord Status Authorizing Provider 
+  Fri Feb 8, 2008 12:00 AM Tran Interface Normal William G. Cotts, MD 
+  
+    
+  
+
+Order Providers  
+ 
+  Authorizing Provider Encounter Provider 
+  William G. Cotts, MD William G. Cotts, MD 
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+Detailed Information  
+  Priority and Order Details Collection Information 
+  
+
+Encounter  
+  View Encounter 
+  
+
+
+Print Label  
+  Click Here 
+  
+
+
+Document List  
+  Encounter Document List 
+  
+  There is no document attached to this encounter. 
+  

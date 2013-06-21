@@ -19,30 +19,65 @@ import odict
 import pdb
 #pdb.set_trace()
 
+
+# Set up different types of processing depending on datatype
+# 1) Number with slashes and dots, ending in a space
+# 2) Number with slashes and dots, ending in a letter
+# 3) String containing numbers and letters ending in a new line
+# 4) String containing numbers and letters ending in a newline space newline
+# 5) Table:
+
+# Will have to keep track of the number of columns and the number of rows. Then I would add a new column depending on the relevant information, parsed by space.
+# for each in numcols
+# for each in numrows
+
+def isnumber(var_name):
+	try:
+		float(var_name)
+		return True
+	except ValueError:
+		return False
+
+
 def processfile(filename, sheet, inputdictionary, outputdictionary):
 	print "Analyzing " + filename
 	datadictionary = odict.odict()
 	f = open(filename, 'r').read()
-	for eachoutput in outputdictionary:
-		datadictionary[eachoutput] = ''
 	for var_name in inputdictionary:
 		p = re.compile(re.escape(var_name) + ':*\s*', re.IGNORECASE)
 		m = p.search(f)
 		if m != None:
-			if inputdictionary[var_name][1] == 'n':
+			if inputdictionary[var_name][1] == 'nsp':
 				edited = f[m.end():]
-				q = re.compile(r'\d+\s*/*\d*/*\d*\.*\s*\d*\d*/*\d*')
+				q = re.compile(r'-*\d+/*\d*/*\d*\.*-*\d*\d*/*\d*')
 				n = q.match(edited)
 				if n != None:
 					datadictionary[inputdictionary[var_name][0]] = n.group()
 				else:
 					datadictionary[inputdictionary[var_name][0]] = ''
-			elif inputdictionary[var_name][1] == 'st':
+			elif inputdictionary[var_name][1] == 'asp':
 				edited = f[m.end():]
 				q = re.compile(r'\w+.*')
 				n = q.match(edited)
 				if n != None:
 					datadictionary[inputdictionary[var_name][0]] = n.group()
+				else:
+					datadictionary[inputdictionary[var_name][0]] = ''
+			elif inputdictionary[var_name][1] == 'tbl':
+				edited = f[m.end():]
+				q = re.compile(r'.*\d+.*\n')
+				n = q.match(edited)
+				if n != None:
+					totalstring = n.group()
+					stringlist = re.split('\s+', totalstring)
+					newlist = []
+					for var_str in stringlist:
+						if isnumber(var_str):
+							newlist.append(var_str)
+					namestring = inputdictionary[var_name][0]
+					for point in range(len(newlist)):
+						newname = namestring + "_col" + str(point)
+						datadictionary[newname] = newlist[point]
 				else:
 					datadictionary[inputdictionary[var_name][0]] = ''
 			elif inputdictionary[var_name][1] == 'ss':
@@ -58,8 +93,8 @@ def processfile(filename, sheet, inputdictionary, outputdictionary):
 						datadictionary[inputdictionary[var_name][0]] = n.group()
 					else:
 						datadictionary[inputdictionary[var_name][0]] = ''
-		else: 
-			datadictionary[var_name] = ''
+		#else: 
+		#	datadictionary[inputdictionary[var_name][0]] = ''
 	return datadictionary
 
 def retrieveinputdictionary(inputdictionary):
@@ -84,8 +119,6 @@ filename = sys.argv[1]
 inputdictionary = odict.odict()
 inputdictionary = retrieveinputdictionary(inputdictionary)
 outputdictionary = odict.odict()
-for inputkey in inputdictionary:
-	outputdictionary[inputdictionary[inputkey][0]] = inputdictionary[inputkey][1]
 log = "Processing " + sys.argv[1] + " at " + timing
 print log
 book = Workbook(encoding='utf-8')
@@ -93,10 +126,21 @@ if sys.argv[total-1] == "folder":
 	folder = 1;
 	foldername = filename;
 	sheet = book.add_sheet("OUTPUT")
+	#INITIALIZATION
+	for f in os.listdir(foldername):
+		if f[-4:] == ".txt":
+			datadictionary = processfile(foldername + "/" + f, sheet, inputdictionary, outputdictionary)
+			for datapoint in datadictionary:
+				if datapoint in outputdictionary:
+					print "alreadyin"
+				else:
+					outputdictionary[datapoint] = 0
+					print datapoint
 	writtenrow = 0
 	writtencol = 1
 	for param in outputdictionary:
 		sheet.write(writtenrow, writtencol, param)
+		outputdictionary[param] = writtencol
 		writtencol += 1
 	writtenrow = 1
 	writtencol = 0
@@ -105,7 +149,7 @@ if sys.argv[total-1] == "folder":
 			sheet.write(writtenrow, writtencol, f)
 			datadictionary = processfile(foldername + "/" + f, sheet, inputdictionary, outputdictionary)
 			for datapoint in datadictionary:
-				writtencol+=1
+				writtencol=outputdictionary[datapoint]
 				sheet.write(writtenrow, writtencol, datadictionary[datapoint])
 			writtenrow += 1
 			writtencol = 0

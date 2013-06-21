@@ -1,0 +1,268 @@
+
+
+Results 
+ CARDIOPULMONARY STRESS TEST (Order 4444444) 
+ 
+ 
+
+
+Result Information  
+ 
+  Exam Date Status Result Date 
+  9/99/9999 Final result 9/99/9999 
+  
+
+
+Lab and Collection  
+  CARDIOPULMONARY STRESS TEST (Order#4444444) on 9/9/99 - Lab and Collection Information 
+  
+
+Transcription  
+ 
+  Type ID Date 
+  NMH CARDIOPULMONARY EXERCISE STRESS TEST 5215847 5/55/5555 
+  
+ 
+  Document Text 
+       
+                             NORTHWESTERN MEMORIAL HOSPITAL
+                       CARDIOPULMONARY EXERCISE STRESS TEST
+                                   (312) 926-2514
+                                 DATE:  07/29/2010
+
+NAME:               QWERTY JOHN
+REFERRING MD:       Sanjiv J Shah, MD               MRN #:         78978978-7897
+
+AGE:                63 years                        DOB:           55/55/5555
+WEIGHT (kg):        99.1
+IBW (kg):           77.5
+HEIGHT (cm):        175
+Reason for          Functional Capacity Evaluation  Medications:   Flomax
+Referral:           Dyspnea                                        Paxil
+                    Fatigue                                        Toprol XL
+                    Chest pain                                     Valtrex
+PMH:                Diastolic heart failure
+                    Hypertension
+                    Amyloidosis
+                    Asthma
+                    Multiple myeloma
+
+PULMONARY FUNCTION
+   Measurement     Measured  % Predicted      Post       % Predicted    % Change
+                                          bronchodilato
+                                                r
+FVC (L)              3.19        68           3.32           71             4
+FEV1 (L)             2.37        67           2.37           67             0
+FEV1/FVC              74                       71
+MVV measured         108         79            100           73            -7
+(L/min)
+MVV calculated       94.8
+(L/min)
+
+Complete pulmonary function testing to be reported separately.
+OXYGEN UPTAKE
+             Measurement                  Measured             % Predicted
+VO2 max (L/min)                             2.152                   96
+VO2 max (ml/kg/min)                    21.7 (IBW 27.8)         75 (IBW 96)
+Anaerobic Threshold (AT) (L/min)            1.543
+AT(ml/kg/min)                               15.6
+AT (% max VO2 predicted)                     69                     46
+
+CARDIOVASCULAR RESPONSE
+             Measurement                  Measured              Predicted
+Heart Rate @ rest                            60
+Heart Rate @ peak                            96                    61%
+Heart Rate Reserve (bpm)                     61                    < 10
+Heart Rate @ AT                              89
+Blood Pressure @ rest (cuff)               120/82
+Blood Pressure @ rest                      156/80
+(intra-arterially)
+Blood Pressure @ peak                      178/78
+Rate Pressure Product (*100)                 171
+O2 Pulse (ml/beat) @ peak                   22.4                   157%
+Rating of Perceived Exertion (RPE) @          2
+AT (1-10)
+Rating of Perceived Exertion @  peak          5
+(1-10)
+
+VENTILATORY RESPONSE
+            Measurement                  Measured               Predicted
+Respiratory quotient (RQ) @  rest          0.87
+RQ @  peak                                 1.01
+VE (L/min) @  peak                         59.9                   55%
+Breathing Reserve (L/min)              48.1L or 45%           >20L or 20%
+Respiratory rate @ rest                     26
+Respiratory rate @  peak                    45                    < 50
+VE/VO2 @  AT                                25                    < 30
+VE/VCO2 @ AT                                28                    < 34
+VD/VT @ rest                               0.39                  < 0.38
+VD/VT @ stage 1                            0.34
+VD/VT @ stage 2                            0.56
+VD/VT @ stage 3                            0.25
+VD/VT @ stage 4                            0.26
+VD/VT @ stage 5                            0.25                  < 0.25
+P(A-a) O2 @ rest                            5.7                   < 28
+P(A-a) O2 @ stage 1                        12.4
+P(A-a) O2 @ stage 2                        -37.2
+P(A-a) O2 @ stage 3                        14.8
+P(A-a) O2 @ stage 4                         8.0
+P(A-a) O2 @ stage 5                         5.9
+P(a-ET) CO2 @ rest                          1.0                 positive 3
+P(a-ET) CO2 @ peak                          2.7                 negative 3
+
+ARTERIAL BLOOD GAS
+                     Rest  Exercise Exercise Exercise Exercise Exercise
+
+                           stage 1  stage 2  stage 3  stage 4  stage 5
+pH                   7.42    7.41     7.38     7.39     7.38     7.37
+PCO2                  39      43       47       45       44       41
+PO2                   97      86       75       82       93      102
+%HBO2                 96      95       94       95       96       96
+%HBCO                 1       1        1        2        1        1
+Hgb                  15.1    16.8     16.1     15.8     16.0     16.5
+Bicarbonate           25      27       28       27       26       24
+Base EX/DEF           1       2        2        2        1        -2
+Lactic Acid          1.2     1.1      1.4      2.1      3.2      4.1
+
+INTERPRETATION:
+This patient exercised for 11 minutes and 24 seconds on a cycle ergometer
+using a 10 watt ramping protocol. He achieved a workload of 112 watts (63%
+predicted).  Exercise was stopped due to fatigue.  No chest pain was
+reported.  No wheezing was auscultated immediately post exercise.  The
+study was submaximal.  Maximum VO2 (l/min) was 96% of predicted value
+consistent with normal absolute oxygen consumption.  However, exercise
+capacity relative to body weight was mildly reduced at 21.7 ml/kg/min (75%
+predicted).
+
+The baseline electrocardiogram showed sinus rhythm with first degree AV
+block.  No premature ventricular beats were observed.  Non-diagnostic ECG
+portion of the exercise stress test due to failure to reach target heart
+rate.
+
+The peak O2 pulse, reflecting stroke volume, is above normal with an
+appropriate curvilinear response with exercise.  The heart rate response to
+exercise is linear but the slope is shifted downward (blunted at each
+exercise stage).  There is abundant heart rate reserve at peak exercise
+which may be due to beta-adrenergic blockade.  The blood pressure response
+with exercise is appropriate.  The onset of anaerobic threshold is delayed.
+Together these findings suggest a blunted heart rate response with an
+otherwise normal cardiovascular response to submaximal exercise.  The
+expected cardiovascular limitation to maximal exercise is not demonstrated.
+The delayed onset of anaerobic threshold suggests good cardiovascular
+conditioning.  The O2 pulse may be falsely elevated in the presence of
+beta-adrenergic blockade.
+
+The breathing reserve is normal with no ventilatory limitation to further
+exercise.  Exercise flow volume loops demonstrate exercise induced
+bronchodilation with no evidence of flow limitation.  The RR at peak
+exercise is normal; the VT at peak exercise is 50% of the FVC.  Measured
+dead space is slightly elevated at rest, decreases appropriately and is at
+the upper limits of normal at end exercise.  Ventilatory equivalents for
+CO2 and O2 at anaerobic threshold are normal.  The resting arterial blood
+gas is normal with an expected metabolic acidosis (lactate 4.1) at peak
+exercise.  There was no oxygen desaturation with exercise.  The A-a
+gradient is normal. Together these findings are suggestive of no
+ventilatory limitation or gas exchange abnormalities with submaximal
+exercise. These findings are consistent with the resting PFTs.
+
+To summarize, these results indicate that the patient's exercise tolerance
+is mildly reduced despite normal absolute oxygen consumption with reduced
+estimated work efficiency (external workload of 63% at 96% VO2).  This
+study demonstrates a blunted heart rate response with an otherwise normal
+cardiovascular response with submaximal exercise.  The expected
+cardiovascular limitation with maximal exercise is not demonstrated,
+although this may be masked in the presence of beta-adrenergic therapy.
+There is evidence of good cardiovascular conditioning, however this may be
+more related to the work of an elevated body mass index rather then muscle
+conditioning.  There is no evidence of ventilatory limitation or
+ventilation/perfusion mismatching preventing further exercise.  Although
+the patient is able to achieve a normal oxygen consumption based on
+cardiopulmonary function, the overall exercise capacity is impaired due to
+increased body weight.  Recommend 1) an exercise-training program with a
+target heart rate of 78-90 bpm and a Rating of Perceived Exertion (RPE) of
+2-3 on a scale of 1-10, exercising 3-5 times per week for 20-30 minutes and
+2) weight reduction.
+
+/TS   D:  07/30/2010 T:  07/30/2010 11:58 A            DOC#:  4444444
+
+
+
+      Frank Becker, MD
+
+Performed   Dictated by:      Theresa Strzelczyk, APN
+
+Electronically Authenticated by
+Frank Becker, MD 33/33/3333 10:15
+cc:   Sanjiv J Shah, MD
+      Theresa Strzelczyk, APN
+     
+ 
+ 
+  
+    Display only: Transcription (3333333) on 7/29/2010 
+  
+ 
+    Document history: Transcription (3333333) on 7/29/2010 
+  
+ 
+  
+
+
+
+
+Order 
+ CARDIOPULMONARY STRESS TEST [3333333] (Order 6014040) 
+ 
+ 
+
+Order Information  
+ 
+  Ordered On Ordered By Ord Status Authorizing Provider 
+  Thu Jul 29, 2010 12:00 AM Tran Interface Normal Sanjiv J. Shah, MD 
+  
+    
+  
+
+Order Providers  
+ 
+  Authorizing Provider Encounter Provider 
+  Sanjiv J. Shah, MD Sanjiv J. Shah, MD 
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+Order CC Information  
+ 
+  Recipient Phone 
+  Angelo Costas, MD 312-922-3815 
+  
+
+
+Detailed Information  
+  Priority and Order Details Collection Information 
+  
+
+Encounter  
+  View Encounter 
+  
+
+
+Print Label  
+  Click Here 
+  
+
+
+Document List  
+  Encounter Document List 
+  
+  There is no document attached to this encounter. 
+  
